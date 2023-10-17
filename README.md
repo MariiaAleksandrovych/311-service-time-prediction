@@ -5,3 +5,6 @@ We aim to test out three different models — a linear regression, a neural netw
 ## Data Availability Statement
 
 The dataset used in this project, "311 Service Requests from 2010 to Present," is publicly available through the City of New York's official data portal at the following URL: [Link to Dataset](https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9). This dataset provides several variables that could be used as features, including agency, complaint type, descriptor, location type, zip code, and borough. Below, we provide the screenshot of the data set we are using. 
+
+
+Table 1. A sample from the dataset “311 Service Requests from 2010 to Present”
