@@ -34,16 +34,19 @@ Three neural networks were trained for the study: a 1-layer neural network (NN),
 ### 1-layer NN:
 Architecture: Input layer (fully connected, 128 neurons, ReLU activation, L2 regularization) with an input shape of ( , 7) for seven features. DropOut Layer (20%) follows, and the output layer has a single neuron with linear activation.
 Training: Adam optimizer, a learning rate of 0.001 for the first 10 epochs, followed by an exponential decay. Batch size is 32, with a validation split of 80%, using Mean Squared Error as the loss function. 
+
 ![Alt text](images/simple-NN.png "1-layer Neural Network")
 
 ### 2-layer NN:
 Architecture: Input layer (fully connected, 64 neurons, ReLU activation, L2 regularization) with input shape ( , 7). DropOut Layer (20%) precedes a hidden layer (fully connected, 32 neurons, ReLU activation, L2 regularization). Another DropOut Layer (20%) is followed by the output layer with a single neuron and linear activation.
 Training: Similar to the 1-layer NN, with Adam optimizer, learning rate schedule, batch size of 32, and 80-20 training-validation split.
+
 ![Alt text](images/2-layer-NN-correct.png "2-layer Neural Network")
 
 ### Deep ResNet:
 Architecture: Input layer (fully connected, 64 neurons, ReLU activation, L2 regularization) with input shape ( , 7). Residual blocks consist of two Dense layers (64 neurons, ReLU activation, L2 regularization) with Batch Normalization and Dropout (20%) layers. A Dense layer (fully connected, 32 neurons, ReLU activation, L2 regularization) and DropOut Layer (20%) precede the output layer (single neuron, linear activation).
-Training: Similar to the previous networks, utilizing Adam optimizer, learning rate schedule, batch size of 32, and 80-20 training-validation split with Mean Squared Error as the loss function
+Training: Similar to the previous networks, utilizing Adam optimizer, learning rate schedule, batch size of 32, and 80-20 training-validation split with Mean Squared Error as the loss function.
+
 ![Alt text](images/DeepResNet-arch.png "Deep ResNet")
 
 ## Feature Selection
