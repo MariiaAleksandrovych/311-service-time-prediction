@@ -18,6 +18,8 @@ We also use a “Report Created” and a “Report Resolved” time feature in o
 Hours make sense to use since minutes would be too precise and days would not capture the nuance we’re looking for.  
 We turned text-based categories, like Descriptors, into numerical-based categories since the descriptions were standardized. While not required for Gradient Boosting Regression, we used a scaler to normalize data used for other models, such as Linear Regression.
 
+![Alt text](images/data-distribution.png "Data Distribution")
+
 ### Data Error Discovery
 
 While working through our project, we discovered a curious error in our data. A number of our samples were showing a negative “Hours Taken” metric, which doesn’t make logical sense. We sought to investigate whether this was a trend throughout the data or whether there was a more focused, particular error.  Ultimately, the issue was limited to one particular agency, the Department of Transportation, and one particular issue: Street Light Condition complaint types. These included street light reports with a variety of problems (“Descriptor”), including potholes and exposed lamp post wires. 
